@@ -99,3 +99,28 @@ def automated_coin_locker():
     }
     return render_template('project_details.html', project=project)
 
+@app.route('/projects/tap-the-talaba')
+def tap_the_talaba():
+    project = {
+        "title": "Tap the Talaba",
+        "description": "A mobile game developed during college that combines elements from the Fuse and Focus games. It features engaging gameplay with various levels and challenges.",
+        "features": [
+            "Color-matching gameplay",
+            "Level progression with increasing difficulty",
+            "Unique fusion of Fuse and Focus elements"
+        ],
+        "technologies": [
+            "Mobile Development Tools",
+            "Game Design Frameworks"
+        ],
+        "images": [
+            "Tap_the_Talaba.jpg",
+            "Tap_the_Talaba2.jpg",
+            "Tap_the_Talaba3.jpg",
+            "Tap_the_Talaba4.jpg",
+            "Tap_the_Talaba5.jpg",
+        ],
+        "github": "https://github.com/yourusername/tap-the-talaba"  # Add this if you have a GitHub link
+    }
+    return render_template('project_details.html', project=project)
+

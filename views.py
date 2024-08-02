@@ -110,8 +110,8 @@ def tap_the_talaba():
             "Unique fusion of Fuse and Focus elements"
         ],
         "technologies": [
-            "Mobile Development Tools",
-            "Game Design Frameworks"
+            "Java",
+            "Android SDK"
         ],
         "images": [
             "Tap_the_Talaba.jpg",
@@ -123,4 +123,30 @@ def tap_the_talaba():
         "github": "https://github.com/yourusername/tap-the-talaba"  # Add this if you have a GitHub link
     }
     return render_template('project_details.html', project=project)
+
+@app.route('/projects/pageant-tabulation-system')
+def pageant_tabulation_system():
+    project = {
+        "title": "Pageant Tabulation System",
+        "description": "The Pageant Tabulation System is a web application designed to streamline the tabulation of pageant results. Developed as a requirement project, it allows judges to vote for each candidate through individual panels. The system updates the current standings in real-time, allowing the tabulator to view and print the results efficiently.",
+        "features": [
+            "Real-time voting by judges",
+            "Instant updates of candidate standings",
+            "Printable results for official documentation",
+            "User-friendly interface for both judges and tabulator"
+        ],
+        "technologies": [
+            "PHP",
+            "HTML",
+            "CSS"
+        ],
+        "images": [
+            "Pageant_Tabulation.png",
+            "Pageant_Tabulation2.png",
+            "Pageant_Tabulation3.png",
+        ],
+        "github": "https://github.com/yourusername/pageant-tabulation-system"
+    }
+    return render_template('project_details.html', project=project)
+
 

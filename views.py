@@ -37,9 +37,10 @@ def hcc_student_portal():
             "JavaScript"
         ],
         "images": [
-            "hcc_student_portal1.png",
+            "hcc_student_portal.png",
             "hcc_student_portal2.png",
-            "hcc_student_portal3.png"
+            "hcc_student_portal3.png",
+            "hcc_student_portal4.png"
         ],
         "github": "https://github.com/yourusername/hcc-student-portal"
     }
@@ -64,8 +65,10 @@ def barangay_information_tracking_system():
             "JavaScript"
         ],
         "images": [
-            "barangay_information_tracking_system1.png",
-            "barangay_information_tracking_system2.png"
+            "barangay_information_system.png",
+            "barangay_information_system2.png",
+            "barangay_information_system3.png",
+            "barangay_information_system4.png"
         ],
         "github": "https://github.com/yourusername/barangay-information-tracking-system"
     }

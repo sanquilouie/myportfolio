@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4">{{ project.title }}</h1>
+    <div class="row">
+        <div class="col-md-8">
+            <p>{{ project.description }}</p>
+            <h5>Features:</h5>
+            <ul>
+                {% for feature in project.features %}
+                <li>{{ feature }}</li>
+                {% endfor %}
+            </ul>
+            <h5>Technologies Used:</h5>
+            <ul>
+                {% for tech in project.technologies %}
+                <li>{{ tech }}</li>
+                {% endfor %}
+            </ul>
+            {% if project.github %}
+            <h5>GitHub Repository:</h5>
+            <p><a href="{{ project.github }}" target="_blank">{{ project.github }}</a></p>
+            {% endif %}
+        </div>
+        <div class="col-md-4">
+            {% if project.images %}
+            <h5>Images:</h5>
+            <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    {% for image in project.images %}
+                    <li data-target="#projectCarousel" data-slide-to="{{ loop.index0 }}" {% if loop.first %}class="active"{% endif %}></li>
+                    {% endfor %}
+                </ol>
+                <div class="carousel-inner">
+                    {% for image in project.images %}
+                    <div class="carousel-item {% if loop.first %}active{% endif %}">
+                        <img src="{{ url_for('static', filename='images/' ~ image) }}" class="d-block w-100" alt="{{ project.title }}">
+                    </div>
+                    {% endfor %}
+                </div>
+                <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

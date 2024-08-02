@@ -1,0 +1,116 @@
+/* Stick the navbar at the top */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: #000; /* Black background for the navbar */
+}
+
+/* Add padding to the top of the content to avoid overlap with the navbar */
+body {
+    padding-top: 56px; /* Adjust based on the height of your navbar */
+    background-color: #000; /* Black background for the whole page */
+    color: #fff; /* White text color for better readability */
+}
+
+/* Ensure text color for links in the navbar is white */
+.navbar-nav .nav-link {
+    color: #fff !important; /* White text for navbar links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd !important; /* Lighter color on hover */
+}
+
+/* Set the color for the navbar brand/logo text */
+.navbar-brand {
+    color: #fff !important; /* White color for the navbar brand/logo text */
+}
+
+/* Background color for content sections */
+.container {
+    background-color: #333; /* Dark gray for content background */
+    padding: 20px; /* Add some padding around the content */
+    border-radius: 8px; /* Optional: Rounded corners for a softer look */
+}
+
+/* Set the color for project titles and descriptions */
+.card-title {
+    color: #fff; /* White text color for project titles */
+}
+
+.card-text {
+    color: #ddd; /* Light gray text color for project descriptions */
+}
+
+/* Hero Section */
+.hero {
+    padding: 4rem 0;
+    background-color: #000; /* Black background for the hero section */
+}
+
+/* About Me Preview Section */
+.about-preview {
+    background-color: #333; /* Dark gray */
+    color: #fff; /* White text color */
+    padding: 3rem 0; /* Padding for spacing */
+}
+
+/* Featured Projects Section */
+.featured-projects {
+    background-color: #000; /* Black */
+    color: #fff; /* White text color */
+    padding: 2rem 0; /* Padding for spacing */
+}
+
+.featured-projects .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.featured-projects .card:hover {
+    transform: translateY(-10px);
+}
+
+/* Skills Section */
+.skills {
+    background-color: #222; /* Slightly lighter black */
+    color: #fff; /* White text color */
+    padding: 3rem 0; /* Padding for spacing */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #222; /* Slightly lighter black */
+    color: #fff; /* White text color */
+    padding: 3rem 0; /* Padding for spacing */
+}
+
+.card-body {
+    background-color: #222; /* Slightly lighter black for card background */
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}

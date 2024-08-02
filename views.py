@@ -70,3 +70,29 @@ def barangay_information_tracking_system():
         "github": "https://github.com/yourusername/barangay-information-tracking-system"
     }
     return render_template('project_details.html', project=project)
+
+
+@app.route('/projects/automated-coin-locker')
+def automated_coin_locker():
+    project = {
+        "title": "Automated Coin Locker",
+        "description": "An innovative locker system that uses Java for the GUI and functionalities, Raspberry Pi for the touchscreen panel, and Arduino for controlling the lockers.",
+        "features": [
+            "Java GUI and functionalities",
+            "Raspberry Pi touchscreen panel",
+            "Arduino for locker control",
+            "Automated and user-friendly design"
+        ],
+        "technologies": [
+            "Java",
+            "Raspberry Pi",
+            "Arduino"
+        ],
+        "images": [
+            "automated_coin_locker1.png",
+            "automated_coin_locker2.png"
+        ],
+        "github": "https://github.com/yourusername/automated-coin-locker"
+    }
+    return render_template('project_details.html', project=project)
+

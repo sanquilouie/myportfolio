@@ -42,7 +42,7 @@ def hcc_student_portal():
             "hcc_student_portal3.png",
             "hcc_student_portal4.png"
         ],
-        "github": "https://github.com/yourusername/hcc-student-portal"
+        "github": "https://github.com/sanquilouie/hccstudentportal"
     }
     return render_template('project_details.html', project=project)
 
@@ -70,7 +70,7 @@ def barangay_information_tracking_system():
             "barangay_information_system3.png",
             "barangay_information_system4.png"
         ],
-        "github": "https://github.com/yourusername/barangay-information-tracking-system"
+        "github": "https://github.com/sanquilouie/barangaytrackingsystem"
     }
     return render_template('project_details.html', project=project)
 
@@ -95,7 +95,6 @@ def automated_coin_locker():
             "automated_coin_locker1.png",
             "automated_coin_locker2.png"
         ],
-        "github": "https://github.com/yourusername/automated-coin-locker"
     }
     return render_template('project_details.html', project=project)
 
@@ -103,7 +102,7 @@ def automated_coin_locker():
 def tap_the_talaba():
     project = {
         "title": "Tap the Talaba",
-        "description": "A mobile game developed during college that combines elements from the Fuse and Focus games. It features engaging gameplay with various levels and challenges.",
+        "description": "A mobile game developed during college that combines elements from 2Fuse and Focus games. It features engaging gameplay with various levels and challenges.",
         "features": [
             "Color-matching gameplay",
             "Level progression with increasing difficulty",
@@ -120,7 +119,7 @@ def tap_the_talaba():
             "Tap_the_Talaba4.jpg",
             "Tap_the_Talaba5.jpg",
         ],
-        "github": "https://github.com/yourusername/tap-the-talaba"  # Add this if you have a GitHub link
+        "github": "https://github.com/sanquilouie/tapthetalaba"
     }
     return render_template('project_details.html', project=project)
 
@@ -145,7 +144,7 @@ def pageant_tabulation_system():
             "Pageant_Tabulation2.png",
             "Pageant_Tabulation3.png",
         ],
-        "github": "https://github.com/yourusername/pageant-tabulation-system"
+        "github": "https://github.com/sanquilouie/pageant_tabulation_system"
     }
     return render_template('project_details.html', project=project)
 

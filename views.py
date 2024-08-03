@@ -94,7 +94,7 @@ def automated_coin_locker():
         "images": [
             "automated_coin_locker.jpg",
             "automated_coin_locker2.jpg",
-            "automated_coin_locker3.jpg",
+            "automated_coin_locker3.jpg"
         ],
     }
     return render_template('project_details.html', project=project)

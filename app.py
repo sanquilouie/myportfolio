@@ -1,17 +1,5 @@
-import logging
-import os
-
-from flask import Flask
-
-logging.basicConfig(level=logging.INFO)
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    app.logger.info('Home route accessed')
-    return 'Hello, World!'
-
+from flask import Flask, render_template
+from views import app
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
+    app.run(debug=True)

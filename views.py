@@ -92,8 +92,9 @@ def automated_coin_locker():
             "Arduino"
         ],
         "images": [
+            "automated_coin_locker.png",
             "automated_coin_locker1.png",
-            "automated_coin_locker2.png"
+            "automated_coin_locker1.png"
         ],
     }
     return render_template('project_details.html', project=project)

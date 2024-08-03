@@ -37,9 +37,10 @@ def hcc_student_portal():
             "JavaScript"
         ],
         "images": [
-            "hcc_student_portal1.png",
+            "hcc_student_portal.png",
             "hcc_student_portal2.png",
-            "hcc_student_portal3.png"
+            "hcc_student_portal3.png",
+            "hcc_student_portal4.png"
         ],
         "github": "https://github.com/yourusername/hcc-student-portal"
     }
@@ -64,8 +65,10 @@ def barangay_information_tracking_system():
             "JavaScript"
         ],
         "images": [
-            "barangay_information_tracking_system1.png",
-            "barangay_information_tracking_system2.png"
+            "barangay_information_system.png",
+            "barangay_information_system2.png",
+            "barangay_information_system3.png",
+            "barangay_information_system4.png"
         ],
         "github": "https://github.com/yourusername/barangay-information-tracking-system"
     }
@@ -95,4 +98,55 @@ def automated_coin_locker():
         "github": "https://github.com/yourusername/automated-coin-locker"
     }
     return render_template('project_details.html', project=project)
+
+@app.route('/projects/tap-the-talaba')
+def tap_the_talaba():
+    project = {
+        "title": "Tap the Talaba",
+        "description": "A mobile game developed during college that combines elements from the Fuse and Focus games. It features engaging gameplay with various levels and challenges.",
+        "features": [
+            "Color-matching gameplay",
+            "Level progression with increasing difficulty",
+            "Unique fusion of Fuse and Focus elements"
+        ],
+        "technologies": [
+            "Java",
+            "Android SDK"
+        ],
+        "images": [
+            "Tap_the_Talaba.jpg",
+            "Tap_the_Talaba2.jpg",
+            "Tap_the_Talaba3.jpg",
+            "Tap_the_Talaba4.jpg",
+            "Tap_the_Talaba5.jpg",
+        ],
+        "github": "https://github.com/yourusername/tap-the-talaba"  # Add this if you have a GitHub link
+    }
+    return render_template('project_details.html', project=project)
+
+@app.route('/projects/pageant-tabulation-system')
+def pageant_tabulation_system():
+    project = {
+        "title": "Pageant Tabulation System",
+        "description": "The Pageant Tabulation System is a web application designed to streamline the tabulation of pageant results. Developed as a requirement project, it allows judges to vote for each candidate through individual panels. The system updates the current standings in real-time, allowing the tabulator to view and print the results efficiently.",
+        "features": [
+            "Real-time voting by judges",
+            "Instant updates of candidate standings",
+            "Printable results for official documentation",
+            "User-friendly interface for both judges and tabulator"
+        ],
+        "technologies": [
+            "PHP",
+            "HTML",
+            "CSS"
+        ],
+        "images": [
+            "Pageant_Tabulation.png",
+            "Pageant_Tabulation2.png",
+            "Pageant_Tabulation3.png",
+        ],
+        "github": "https://github.com/yourusername/pageant-tabulation-system"
+    }
+    return render_template('project_details.html', project=project)
+
 
